@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "633354609589",
+    "project_id": "apsu-math-trails-94c3d",
+    "storage_bucket": "apsu-math-trails-94c3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633354609589:android:144e60d4fab25b85e4effc",
+        "android_client_info": {
+          "package_name": "austin.peay.state.university.math_trails"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633354609589-7vta88v5grg8jtkriq7b5e6is843a2r1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIMrtZw7Rr3KY5aaeT9d_AnfZDyoU2iVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633354609589-7vta88v5grg8jtkriq7b5e6is843a2r1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "633354609589-3iqmgjbnh7lvhl90sj4fh57a5cnitpko.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.testRun"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633354609589:android:d4a887b2bf65b89ee4effc",
+        "android_client_info": {
+          "package_name": "com.example.test_run"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633354609589-7vta88v5grg8jtkriq7b5e6is843a2r1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIMrtZw7Rr3KY5aaeT9d_AnfZDyoU2iVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633354609589-7vta88v5grg8jtkriq7b5e6is843a2r1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "633354609589-3iqmgjbnh7lvhl90sj4fh57a5cnitpko.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.testRun"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
