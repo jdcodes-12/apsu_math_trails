@@ -1,0 +1,82 @@
+[
+    {
+        "trail_id": 1,
+        "trail_name_full": "Trail 1 Full Name",
+        "trail_name_short": "Trail 1 Short Name",
+        "trail_description_full": "Trail 1 long description would go here.",
+        "trail_description_short": "Trail 1 short description",
+        "duration_in_minutes": 65.00,
+        "stops": [
+            {
+                "parent_trail_name": "Trail 1 Short Name",
+                "stop_id": 1,
+                "stop_name_full": "Stop 1's Full name of Trail 1 goes here",
+                "stop_name_short": "Stop 1's Short name of Trail 1",
+                "stop_description_Full": "Stop 1's Full description goes here, of Trail 1",
+                "stop_description_Short": "Stop 1 short description",
+                "info_section": {
+                    "stop_id": 1,
+                    "section_header": "Info Section header - stop 1",
+                    "section_body": "Some random information will go here. Should be scrollable of the stop's description."
+                },
+                "objective_section": {
+                    "stop_id": 1,
+                    "section_header": "Objective Section header - stop 1",
+                    "questions": [
+                        {
+                            "id": "q1",
+                            "prompt": "Question 1 of Stop 1 - Prompt",
+                            "answer_choices": [
+                                {
+                                    "reponse": "True",
+                                    "label": "A"
+                                },
+                                {
+                                    "reponse": "False",
+                                    "label": "B"
+                                },
+                                {
+                                    "reponse": "Both A & B",
+                                    "label": "C"
+                                },
+                                {
+                                    "reponse": "Neither A & B",
+                                    "label": "D"
+                                }
+                            ],
+                            "correct_answer_label": "D"
+                        },
+                        {
+                            "id": "q2",
+                            "prompt": "Question 2 of Stop 1 - Prompt",
+                            "answer_choices": [
+                                {
+                                    "reponse": "2 + 2 does equal 2",
+                                    "label": "A"
+                                },
+                                {
+                                    "reponse": "3 + 3 does equal 6",
+                                    "label": "B"
+                                },
+                                {
+                                    "reponse": "4 + 4 does equal 9",
+                                    "label": "C"
+                                },
+                                {
+                                    "reponse": "5 + 5 does equal 4",
+                                    "label": "D"
+                                }
+                            ],
+                            "correct_answer_label": "B"
+                        }
+                    ]
+                },
+                "wrap_up_section": {
+                    "stop_id": 1,
+                    "section_header": "Section header for wrap up of stop 1",
+                    "section_body": "Some huge lorem paragraph that gives info for wrap up section"
+                }
+            }
+        ]
+    }
+]
