@@ -28,19 +28,19 @@
                             "prompt": "Question 1 of Stop 1 - Prompt",
                             "answer_choices": [
                                 {
-                                    "reponse": "True",
+                                    "response": "True",
                                     "label": "A"
                                 },
                                 {
-                                    "reponse": "False",
+                                    "response": "False",
                                     "label": "B"
                                 },
                                 {
-                                    "reponse": "Both A & B",
+                                    "response": "Both A & B",
                                     "label": "C"
                                 },
                                 {
-                                    "reponse": "Neither A & B",
+                                    "response": "Neither A & B",
                                     "label": "D"
                                 }
                             ],
