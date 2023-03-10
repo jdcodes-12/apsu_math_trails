@@ -24,7 +24,7 @@
                     "section_header": "Objective Section header - stop 1",
                     "questions": [
                         {
-                            "id": "q1",
+                            "question_id": "q1",
                             "prompt": "Question 1 of Stop 1 - Prompt",
                             "answer_choices": [
                                 {
@@ -47,7 +47,7 @@
                             "correct_answer_label": "D"
                         },
                         {
-                            "id": "q2",
+                            "question_id": "q2",
                             "prompt": "Question 2 of Stop 1 - Prompt",
                             "answer_choices": [
                                 {
