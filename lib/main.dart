@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:math_trails/utils/DataUploader.util.dart';
 import 'package:math_trails/utils/firebase/firebase_options.dart';
+import 'package:math_trails/utils/DataUploader.util.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,10 +22,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: const Scaffold(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Math Trails"),
+          centerTitle: true,
+          backgroundColor: Colors.transparent,
+          shadowColor: Colors.transparent,
+          foregroundColor: Colors.black87,
+        ),
         body: Center(
           child: Text(
-            "Home Screen"
+            "Hello World"
           ),
         ),
       ),
