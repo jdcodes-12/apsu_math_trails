@@ -6,5 +6,3 @@ Future<void> main() async {
   await AppSetup.runSetup();
   runApp(const App());
 }
-
-
