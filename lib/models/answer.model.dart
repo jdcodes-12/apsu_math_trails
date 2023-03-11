@@ -7,15 +7,15 @@ class Answer {
     required this.label,
   });
 
-  factory Answer.fromJson(Map<String, dynamic> json) {
-    return Answer._(
-      response: json["response"],
-      label: json["label"],
+  factory Answer.fromJson(Map<String, dynamic> json) =>
+    Answer._(
+      response: json['response'],
+      label: json['label'],
     );
-  }
 
-  Map<String, dynamic> toJson() => {
-    "response": response,
-    "label": label,
-  };
+  Map<String, dynamic> toJson() => 
+    {
+      "response": response,
+      "label": label,
+    };
 }

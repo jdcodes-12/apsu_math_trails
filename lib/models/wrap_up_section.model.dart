@@ -1,5 +1,5 @@
 class WrapUpSection {
-  final String stopId;
+  final int stopId;
   final String sectionHeader;
   final String sectionBody;
 
@@ -9,17 +9,17 @@ class WrapUpSection {
     required this.sectionBody,
   });
 
-  factory WrapUpSection.fromJson(Map<String, dynamic> json) {
-    return WrapUpSection._(
+  factory WrapUpSection.fromJson(Map<String, dynamic> json) =>
+    WrapUpSection._(
       stopId: json["stop_id"],
       sectionHeader: json["section_header"],
       sectionBody: json["section_body"],
-    ); 
-  }
+    );
 
-  Map<String, dynamic> toJson() => {
-    "stop_id": stopId,
-    "section_header": sectionHeader,
-    "section_body": sectionBody,
-  };
+  Map<String, dynamic> toJson() => 
+    {
+      "stop_id": stopId,
+      "section_header": sectionHeader,
+      "section_body": sectionBody,
+    };
 }

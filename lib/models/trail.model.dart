@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:math_trails/models/stop.model.dart';
 import 'package:math_trails/utils/JsonParser.util.dart';
 
@@ -43,6 +45,6 @@ class Trail {
     "trail_description_full": trailDescriptionFull,
     "trail_description_short": trailDescriptionShort,
     "duration_in_minutes": durationInMinutes,
-    "stops": stops.toString(),
+    "stops": stops.map((stop) => stop.toJson()),
   };
 }

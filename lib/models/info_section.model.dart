@@ -1,5 +1,5 @@
 class InfoSection {
-  final String stopId;
+  final int stopId;
   final String sectionHeader;
   final String sectionBody;
 
@@ -9,14 +9,13 @@ class InfoSection {
     required this.sectionBody,
   });
 
-  factory InfoSection.fromJson(Map<String, dynamic> json) {
-    return InfoSection._(
-      stopId: json["stop_id"],
-      sectionHeader: json["section_header"],
-      sectionBody: json["section_body"],
+  factory InfoSection.fromJson(Map<String, dynamic> json) =>
+    InfoSection._(
+      stopId: json['stop_id'],
+      sectionHeader: json['section_header'],
+      sectionBody: json['section_body'],
     ); 
-  }
-
+  
   Map<String, dynamic> toJson() => {
     "stop_id": stopId,
     "section_header": sectionHeader,
