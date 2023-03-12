@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
 class StopsList extends StatelessWidget {
-  const StopsList({super.key});
+  final String msg;
+
+  const StopsList({super.key, required this.msg});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Text(msg),
+    );
   }
 }
