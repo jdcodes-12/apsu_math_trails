@@ -7,7 +7,7 @@ class WrapUpSectionTabHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const TabHeader(
-      icon: Icon(Icons.data_object),
+      icon: Icon(Icons.done),
       text: "Wrap Up",
     );
   }
