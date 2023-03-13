@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 
+import 'package:math_trails/models/objective_section.model.dart';
+
 class ObjectiveSectionTabView extends StatelessWidget {
-  const ObjectiveSectionTabView({super.key});
+  final ObjectiveSection objective;
+
+  const ObjectiveSectionTabView({super.key, required this.objective});
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('Objective Section - Content goes here'),
+    return Center(
+      child: Text(
+        '${objective.stopId}\n\n${objective.sectionHeader}\n\n${objective.questions.length}',
+      ),
     );
   }
 }

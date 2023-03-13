@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+
+import 'package:math_trails/models/stop.model.dart';
+
 import 'package:math_trails/widgets/tabs/tab_headers/info_tab_header.widget.dart';
 import 'package:math_trails/widgets/tabs/tab_headers/objective_tab_header.widget.dart';
 import 'package:math_trails/widgets/tabs/tab_headers/wrap_up_tab_header.widget.dart';
@@ -8,7 +11,9 @@ import 'package:math_trails/widgets/tabs/tab_views/wrap_up_section_tab_view.widg
 
 // TODO: Implement Tabbar
 class StopSectionsRoute extends StatelessWidget {
-  const StopSectionsRoute({super.key});
+  final Stop stop;
+
+  const StopSectionsRoute({super.key, required this.stop});
 
   @override
   Widget build(BuildContext context) {
@@ -24,11 +29,11 @@ class StopSectionsRoute extends StatelessWidget {
             ],
           ),
         ),
-        body: const TabBarView(
+        body: TabBarView(
           children: [
-            InfoSectionTabView(),
-            ObjectiveSectionTabView(),
-            WrapUpSectionTabView(),
+            InfoSectionTabView(info: stop.infoSection),
+            ObjectiveSectionTabView(objective: stop.objectiveSection),
+            WrapUpSectionTabView(wrapUp: stop.wrapUpSection),
           ],
         ),
       ),

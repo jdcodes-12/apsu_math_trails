@@ -1,10 +1,15 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+
 import 'package:math_trails/routes.dart';
 
+import 'package:math_trails/models/trail.model.dart';
+
 class TrailPrestopRoute extends StatelessWidget {
-  const TrailPrestopRoute({super.key});
+  final Trail trail;
+
+  const TrailPrestopRoute({super.key, required this.trail});
 
   @override
   Widget build(BuildContext context) {
@@ -18,19 +23,25 @@ class TrailPrestopRoute extends StatelessWidget {
           },
           icon: const Icon(
             Icons.arrow_back_ios,
-            color: Colors.black87,
+            color: Colors.white,
           ),
+        ),
+        title: Text(
+          trail.trailNameFull,
         ),
       ),
       body: Column(
         children: [
-          const Text('TrailPrestopRoute'),
+          Text(
+            '$trail',
+          ),
           ElevatedButton.icon(
             onPressed: () {
               log('Pressed button on TrailPrestopRoute...');
               Navigator.pushNamed(
                 context,
                 RouteGenerator.stopsListRoute,
+                arguments: trail.stops,
               );
               log('Moving to Trail X\'s stop list');
             },
