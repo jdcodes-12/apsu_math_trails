@@ -1,6 +1,5 @@
-import 'dart:developer';
 import 'package:flutter/material.dart';
-import 'package:math_trails/routes.dart';
+import 'package:math_trails/widgets/lists/trails_list.widget.dart';
 
 // TODO: Fetch Trail data from firestore & load into ListView.builder()
 class TrailsListRoute extends StatelessWidget {
@@ -16,7 +15,7 @@ class TrailsListRoute extends StatelessWidget {
           title: Text("Math Trails"),
           elevation: 0.0,
           backgroundColor: Colors.transparent,
-          foregroundColor: Colors.black45,
+          foregroundColor: Colors.white,
         ),
         body: Column(
           children: [
@@ -27,36 +26,7 @@ class TrailsListRoute extends StatelessWidget {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24.0),
-                child: ListView(
-                  children: [
-                    InkWell(
-                      onDoubleTap: () {
-                        log('pressed');
-                        Navigator.pushNamed(
-                            context, RouteGenerator.trailPrestopRoute,
-                            arguments: {
-                              "trail_id": 1,
-                              "trail_name": "Trail 1 - Name",
-                            });
-                        log('Moving to TrailPrestopRoute...');
-                      },
-                      child: Card(
-                        child: Column(
-                          children: const [
-                            Text(
-                              "Trail X",
-                              style: TextStyle(
-                                fontSize: 24.0,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.deepPurpleAccent,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                child: TrailsList(),
               ),
             ),
           ],
