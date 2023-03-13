@@ -1,35 +1,26 @@
-import 'dart:developer';
 import 'package:flutter/material.dart';
-import 'package:math_trails/routes.dart';
 
-class TrailCardSpotlight extends StatelessWidget {
-  const TrailCardSpotlight({super.key});
+class TrailSpotlightCard extends StatelessWidget {
+  const TrailSpotlightCard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onDoubleTap: () {
-        log('pressed');
-        Navigator.pushNamed(
-          context,
-          RouteGenerator.trailPrestopRoute,
-          arguments: {},
-        );
-        log('Moving to TrailPrestopRoute...');
-      },
-      child: Card(
-        child: Column(
-          children: const [
-            Text(
-              "Trail X",
-              style: TextStyle(
-                fontSize: 24.0,
-                fontWeight: FontWeight.w600,
-                color: Colors.deepPurpleAccent,
-              ),
+    return Card(
+      elevation: 16.0,
+      clipBehavior: Clip.antiAlias,
+      child: Stack(
+        children: [
+          FittedBox(
+            child: Image.asset(
+              'assets/images/trails/trail_1/stop_1/trail-1-stop-1-info-pic.jpg',
+              height: 400.00,
+              width: 400.00,
+              fit: BoxFit.cover,
+              alignment: Alignment.center,
             ),
-          ],
-        ),
+          ),
+          const Text('Visualizing the stack'),
+        ],
       ),
     );
   }
