@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:math_trails/widgets/tabs/tab_headers/info_tab_header.widget.dart';
+import 'package:math_trails/widgets/tabs/tab_headers/objective_tab_header.widget.dart';
+import 'package:math_trails/widgets/tabs/tab_headers/wrap_up_tab_header.widget.dart';
+import 'package:math_trails/widgets/tabs/tab_views/info_section_tab_view.widget.dart';
+import 'package:math_trails/widgets/tabs/tab_views/objective_section_tab_view.widget.dart';
+import 'package:math_trails/widgets/tabs/tab_views/wrap_up_section_tab_view.widget.dart';
 
 // TODO: Implement Tabbar
 class StopSectionsRoute extends StatelessWidget {
@@ -12,29 +18,17 @@ class StopSectionsRoute extends StatelessWidget {
         appBar: AppBar(
           bottom: const TabBar(
             tabs: [
-              Tab(
-                child: Icon(Icons.abc),
-              ),
-              Tab(
-                child: Icon(Icons.ac_unit),
-              ),
-              Tab(
-                child: Icon(Icons.info_outline),
-              ),
+              InfoSectionTabHeader(),
+              ObjectiveSectionTabHeader(),
+              WrapUpSectionTabHeader()
             ],
           ),
         ),
         body: const TabBarView(
           children: [
-            Center(
-              child: Text('Content - Tab 1'),
-            ),
-            Center(
-              child: Text('Content - Tab 2'),
-            ),
-            Center(
-              child: Text('Content - Tab 3'),
-            ),
+            InfoSectionTabView(),
+            ObjectiveSectionTabView(),
+            WrapUpSectionTabView(),
           ],
         ),
       ),

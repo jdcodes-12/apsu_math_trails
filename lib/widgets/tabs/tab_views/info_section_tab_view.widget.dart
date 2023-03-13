@@ -5,6 +5,8 @@ class InfoSectionTabView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Center(
+      child: Text('Info Section - Content goes here'),
+    );
   }
 }

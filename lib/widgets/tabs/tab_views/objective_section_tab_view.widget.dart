@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
-class ObectiveSectionTabView extends StatelessWidget {
-  const ObectiveSectionTabView({super.key});
+class ObjectiveSectionTabView extends StatelessWidget {
+  const ObjectiveSectionTabView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Center(
+      child: Text('Objective Section - Content goes here'),
+    );
   }
 }
